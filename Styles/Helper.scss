@@ -1,0 +1,34 @@
+﻿@mixin flex-row-center() {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-column-center() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.full-height {
+    height: 100%;
+    height: -webkit-fill-available;
+}
+
+.row {
+    @include flex-row-center;
+}
+
+[class*="col-"]{
+    @include flex-column-center;
+}
+
+.footer {
+    overflow: hidden;
+}
+
+.container.body-content {
+    height: 80vh;
+    & > main, div {
+        height: inherit;
+    }
+}

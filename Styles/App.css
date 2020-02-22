@@ -1,0 +1,8 @@
+﻿/*@import 'Areas/Identity/Pages/Identity';*/
+/*@import 'Shared/Helper.scss';*/
+.center {
+  display: flex;
+  justify-content: center; }
+
+.test {
+  color: red; }

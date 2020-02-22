@@ -1,0 +1,25 @@
+﻿$main-color: pink;
+$accent-color: indigo;
+
+body {
+    height: calc(100vh - 60px);
+}
+
+h1 {
+    color: $main-color;
+}
+
+button {
+    background-color: $accent-color !important;
+}
+
+a, .navbar-brand {
+    color:$accent-color !important;
+
+}
+a:hover {
+    color: $main-color !important;
+}
+.navbar-brand:hover {
+    color: $main-color !important;
+}
