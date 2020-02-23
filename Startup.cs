@@ -37,8 +37,6 @@ namespace CVWebsite
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages().AddRazorRuntimeCompilation();
-            services.AddMvc().AddRazorRuntimeCompilation();
-            services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddServerSideBlazor();
             services.AddWebOptimizer(pipeline => {
                 pipeline.AddScssBundle("/css/site.css", "App.scss").UseContentRoot();
