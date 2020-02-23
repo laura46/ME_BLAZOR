@@ -1,4 +1,6 @@
 ﻿@page
+@using Microsoft.AspNetCore.Authorization;
+@attribute [Authorize(Roles = "admin")]
 @model RegisterModel
 @{
     ViewData["Title"] = "Register";

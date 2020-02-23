@@ -1,9 +1,29 @@
 ﻿@import 'Helper.scss';
 @import 'Theme.scss';
+@import url('../css/open-iconic/font/css/open-iconic-bootstrap.min.css');
 
-body {
+.header {
+    @include flex-row-end;
+    position: sticky;
+    top: 0;
+    height: 6vh;
+    background-color: $bar-color;
+    border-bottom: 1px solid #d6d5d5;
 }
 
+body {
+    height: calc(100vh - 6vh);
+}
+
+.footer {
+    overflow: hidden;
+    height: 6vh;
+
+    & > div.container {
+        height: inherit;
+        @include flex-row-center;
+    }
+}
 
 
 
