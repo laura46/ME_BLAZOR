@@ -1,0 +1,32 @@
+[
+    {
+      "description": "badge-mta-html5",
+      "title": "MTA: HTML5 Application Development Fundamentals - Certified 2018",
+      "html": "<div data-iframe-width='150' data-iframe-height='270' data-share-badge-id='cd93bea9-7c51-45cb-8b4b-ccfb902d88de' data-share-badge-host='https://www.youracclaim.com'></div>"
+    },
+    {
+      "description": "badge-mta-dbf",
+      "title": "MTA: Database Fundamentals - Certified 2018",
+      "html": "<div data-iframe-width='150' data-iframe-height='270' data-share-badge-id='59702d74-af74-4f0b-9b8f-b8309ec542ba' data-share-badge-host='https://www.youracclaim.com'></div>"
+    },
+    {
+      "description": "badge-mta-sdf",
+      "title": "MTA: Software Development Fundamentals - Certified 2017",
+      "html": "<div data-iframe-width='150' data-iframe-height='270' data-share-badge-id='d247b65d-6095-413c-8358-132733b3cd0a' data-share-badge-host='https://www.youracclaim.com'></div>"
+    },
+    {
+      "description": "badge-os-pp",
+      "title": "Microsoft Office Specialist PowerPoint 2013",
+      "html": "<div data-iframe-width='150' data-iframe-height='270' data-share-badge-id='693f2b01-e3bd-41a6-b898-b8487fd26a34' data-share-badge-host='https://www.youracclaim.com'></div>"
+    },
+    {
+      "description": "badge-os-ex",
+      "title": "Microsoft Office Specialist Excel 2013",
+      "html": "<div data-iframe-width='150' data-iframe-height='270' data-share-badge-id='c6180f3b-521e-4a38-a1de-6bcb62afb56b' data-share-badge-host='https://www.youracclaim.com'></div>"
+    },
+    {
+      "description": "badge-os-wo",
+      "title": "Microsoft Office Specialist Word 2013",
+      "html": "<div data-iframe-width='150' data-iframe-height='270' data-share-badge-id='51304121-022f-461f-a0e3-b9b42d237cca' data-share-badge-host='https://www.youracclaim.com'></div>"
+    }
+  ]

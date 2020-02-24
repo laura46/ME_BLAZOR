@@ -1,0 +1,21 @@
+﻿@using CVWebsite.Data.Models;
+@inject IJSRuntime JSRuntime;
+
+    <div>
+        @foreach (Badge badge in badges)
+        {
+            <h4>@badge.Title</h4><br />
+            @((MarkupString)badge.Html)
+        }
+    </div>
+
+@code {
+    List<Badge> badges = new List<Badge>();
+    [Parameter]
+    public Badge.CATEGORY requestedCategory { get; set; }
+    protected override void OnInitialized()
+    {
+        Badge getBadges = new Badge();
+        badges = getBadges.GetBadges(requestedCategory);
+    }
+}

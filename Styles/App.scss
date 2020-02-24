@@ -9,6 +9,9 @@
     height: 6vh;
     background-color: $bar-color;
     border-bottom: 1px solid #d6d5d5;
+    & > a, form {
+        margin-left: 12px;
+    }
 }
 
 body {

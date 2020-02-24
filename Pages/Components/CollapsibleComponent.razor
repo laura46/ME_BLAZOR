@@ -1,0 +1,9 @@
+﻿<h4>@Heading</h4><br />
+<div>@ChildContent</div>
+
+@code {
+    [Parameter]
+    public string Heading { get; set; }
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

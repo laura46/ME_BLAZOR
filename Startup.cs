@@ -43,7 +43,7 @@ namespace CVWebsite
                 pipeline.AddScssBundle("/css/site.css", "App.scss").UseContentRoot();
             });
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
-            services.AddSingleton<WeatherForecastService>();
+
             
         }
 

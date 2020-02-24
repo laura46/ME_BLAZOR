@@ -1,5 +1,9 @@
 ﻿@page "/"
+@using CVWebsite.Pages.Components;
+@using CVWebsite.Data.Models;
 
 <h1 class="test">Hello, test</h1>
 
-Welcome to your new app.
+<CollapsibleComponent Heading="MTA Certificaten" >
+    <BadgeComponent requestedCategory="Badge.CATEGORY.MTA"></BadgeComponent>
+</CollapsibleComponent>
