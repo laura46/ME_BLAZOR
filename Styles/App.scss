@@ -1,8 +1,9 @@
 ﻿@import 'Helper.scss';
 @import 'Theme.scss';
+@import 'Component.scss';
 @import url('../css/open-iconic/font/css/open-iconic-bootstrap.min.css');
 
-.header {
+.top-nav {
     @include flex-row-end;
     position: sticky;
     top: 0;
@@ -15,12 +16,19 @@
 }
 
 body {
-    height: calc(100vh - 6vh);
+    height: 100%;
+    min-height: 100vh;
+    & > app {
+        min-height: inherit;
+    }
 }
 
 .footer {
     overflow: hidden;
     height: 6vh;
+    position: sticky;
+    bottom: 0px;
+    background-color: #ffffff;
 
     & > div.container {
         height: inherit;

@@ -1,9 +1,43 @@
-﻿<h4>@Heading</h4><br />
-<div>@ChildContent</div>
+﻿<div class="collapsible">
+    <button @onclick="Toggle" >@toggleValue</button>
+    @if (Collapsed)
+    {
+        <div class="row-end collapsible-header out" @onclick="Toggle">
+            <HeaderComponent Content="@Heading" Type="HeaderComponent.HEADER_TYPES.MEDIUM"></HeaderComponent>
+            <span class="oi button oi-chevron-top" title="toggle down" aria-hidden="true"></span>
+        </div>
+        <br />
+        <div>@ChildContent</div>
+    }
+    else
+    {
+        <div class="row-end collapsible-header" @onclick="Toggle" >
+            <HeaderComponent Content="@Heading" Type="HeaderComponent.HEADER_TYPES.MEDIUM"></HeaderComponent>
+            <span class="oi button oi-chevron-bottom" title="toggle down" aria-hidden="true"></span>
+        </div>
+    }
+
+</div>
+
+
 
 @code {
     [Parameter]
     public string Heading { get; set; }
     [Parameter]
     public RenderFragment ChildContent { get; set; }
+
+    public bool Collapsed = false;
+
+    public string toggleValue = "no";
+
+
+
+    void Toggle() 
+    {
+        Collapsed = true;
+        toggleValue = "tets";
+        
+       // Collapsed = !Collapsed;
+    }
 }

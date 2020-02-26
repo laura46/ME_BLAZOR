@@ -26,3 +26,11 @@ a:hover {
 .navbar-brand:hover {
     color: $main-color !important;
 }
+
+.oi.button {
+    cursor: pointer;
+    &:hover, :focus, :active {
+        color: $main-color;
+    }
+}
+

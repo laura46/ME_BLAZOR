@@ -1,0 +1,40 @@
+﻿@import 'Helper.scss';
+
+.collapsible {
+    max-width: 420px;
+    @include border;
+
+    &-header {
+        &.in {
+            @include border;
+        }
+
+        &.out {
+            border-bottom: 1px solid black;
+        }
+
+        cursor: pointer;
+        padding: 6px 12px;
+
+        & > * {
+            padding-left: 12px;
+        }
+    }
+}
+
+.header {
+    &-sm {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    &-md {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &-lg {
+        font-size: 36px;
+        font-weight: 600;
+    }
+}

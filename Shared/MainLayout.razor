@@ -4,9 +4,7 @@
 <AuthorizeView>
     <Authorized>
         <div class="main">
-            <div class="header">
-                <LoginDisplay />
-            </div>
+            <TopNav />
             <div class="content">
                 @Body
             </div>
@@ -17,5 +15,10 @@
         <RedirectToLogin></RedirectToLogin>
     </NotAuthorized>
 </AuthorizeView>
+<footer class="footer border-top text-muted">
+    <div class="container">
+        &copy; 2020 - Laura Poortenaar - <a asp-area="" asp-page="Privacy">Privacy</a>
+    </div>
+</footer>
 
 
