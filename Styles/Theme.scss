@@ -1,6 +1,9 @@
 ﻿$main-color: pink;
 $accent-color: indigo;
 $bar-color: #f7f7f7;
+$right-bar-space: 240px;
+$badge-size: 80px;
+$button-shadow: 2px 2px 4px lightgrey;
 
 button {
     background-color: $accent-color !important;
@@ -8,8 +11,7 @@ button {
     border-radius: 4px;
     border: $accent-color;
     padding: 4px 8px;
-    box-shadow: lightgrey;
-    box-shadow: 2px 2px 4px lightgrey;
+    box-shadow: $button-shadow;
 }
 
 a, .navbar-brand {

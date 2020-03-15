@@ -19,9 +19,7 @@ namespace CVWebsite.Data.Models
 
         public List<Badge> GetBadges(CATEGORY category) 
         {
-            
-            Badge[] badgesArray = JsonConvert.DeserializeObject<Badge[]>(File.ReadAllText("Certificates/MicrosoftBadges.json"));
-            List<Badge> badges = badgesArray.ToList<Badge>();
+            List<Badge> badges = IMapToModel<Badge>.MapJsonToList("Certificates/MicrosoftBadges.json");
             badges.ForEach(badge => { badge.Category = (badge.Description.Contains("mta")) ? CATEGORY.MTA : CATEGORY.OFFICE; });
             return SortCategory(badges, category);
         }

@@ -6,9 +6,9 @@ using System.Linq;
 
 namespace CVWebsite.Data
 {
-    public interface IMapToModel<T>
+    interface IMapToModel<T>
     {
-        public List<T> MapJsonToList(string jsonPath) 
+        static List<T> MapJsonToList(string jsonPath) 
         {
             try
             {

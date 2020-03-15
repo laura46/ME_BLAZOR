@@ -1,15 +1,46 @@
 ﻿@import 'Helper.scss';
 @import 'Theme.scss';
 
+.github {
+    &-button {
+        @include flex-row;
+        max-width: $right-bar-space;
+        height: 60px;
+        background-color: black;
+        box-shadow: $button-shadow;
+        border-radius: 4px;
+        border: 1px solid black;
+        cursor: pointer;
+        color: white;
+        & i {
+            color: white;
+            padding: 0 6px;
+            &:before {
+                font-size: 54px;
+            }
+        }
+
+        &:hover {
+            & > i.fa-angle-right {
+                &:before {
+                    content: "\f101";
+                }
+            }
+        }
+    }
+}
+
 .badge {
     &-container {
         margin-bottom: 12px;
+
         & img {
-            min-width:80px;
-            min-height:80px;
-            width: 80px;
-            height: 80px;
+            min-width: $badge-size;
+            min-height: $badge-size;
+            width: $badge-size;
+            height: $badge-size;
         }
+
         & a {
             @include flex-row;
             text-decoration: none;
@@ -19,7 +50,7 @@
 }
 
 .collapsible {
-    max-width: 240px;
+    max-width: $right-bar-space;
     min-height: 62px;
     transition: min-height 3s;
     @include border;

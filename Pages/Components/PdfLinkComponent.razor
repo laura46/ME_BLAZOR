@@ -1,5 +1,16 @@
-﻿<a></a>
+﻿@using CVWebsite.Data.Models;
+@foreach (PdfLink pdf in Pdfs)
+{
+    <a>@pdf.Title</a><br />
+}
+
 
 @code {
+    public List<PdfLink> Pdfs { get; set; }
 
+    protected override void OnInitialized()
+    {
+        PdfLink pdfLink = new PdfLink();
+        Pdfs = pdfLink.GetPdfs();
+    }
 }

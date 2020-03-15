@@ -11,14 +11,10 @@ namespace CVWebsite.Data.Models
     {
         public string Title { get; set; }
         public string Path { get; set; }
-
-        public PdfLink()
+        public PdfLink() {}
+        public List<PdfLink> GetPdfs() 
         {
-        }
-        
-        public List<PdfLink> GetPdfs()
-        {
-            //return Mapper.MapJsonToList("Certificates/CertifiedSecure.json");
+            return IMapToModel<PdfLink>.MapJsonToList("Certificates/CertifiedSecure.json");
         }
     }
 }
