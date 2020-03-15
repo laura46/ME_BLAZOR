@@ -1,26 +1,37 @@
-﻿@mixin flex-row-center() {
+﻿@mixin flex-row() {
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    flex-wrap: row;
     align-items: center;
 }
-@mixin flex-row-end() {
-    display: flex;
-    flex-flow: row;
-    justify-content:flex-end;
-    align-items:center;
+@mixin flex-row-center() {
+    @include flex-row;
+    justify-content: center;
 }
-@mixin flex-column-center() {
+@mixin flex-row-end() {
+    @include flex-row;
+    justify-content:flex-end;
+}
+@mixin flex-column() {
     display: flex;
     flex-direction: column;
+}
+@mixin flex-column-center() {
+    @include flex-column;
     justify-content: center;
 }
 @mixin border() {
     border: 1px solid black;
     border-radius: 4px;
 }
+@mixin font-quest { font-family: 'Questrial', sans-serif; }
+@mixin font-roboto { font-family: 'Roboto', sans-serif; }
+
 .full-height {
     height: 100%;
+}
+.column {
+    @include flex-column-center;
 }
 .row {
     @include flex-row-center;

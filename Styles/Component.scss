@@ -1,16 +1,33 @@
 ﻿@import 'Helper.scss';
 
+.badge {
+    &-container {
+        @include flex-row;
+        margin: 12px 0;
+        cursor: pointer;
+        & img {
+            display: flex;
+        }
+    }
+}
+
 .collapsible {
-    max-width: 420px;
+    max-width: 240px;
+    min-height: 62px;
+    transition: min-height 3s;
     @include border;
 
+    &-container {
+        @include flex-column-center;
+        float: right;
+
+        & > div {
+            margin: 6px 0;
+        }
+    }
     &-header {
         &.in {
             @include border;
-        }
-
-        &.out {
-            border-bottom: 1px solid black;
         }
 
         cursor: pointer;
@@ -20,20 +37,24 @@
             padding-left: 12px;
         }
     }
+    &-body {
+        padding: 6px 20px;
+    }
 }
 
 .header {
-    &-sm {
+    @include font-quest;
+    &.sm {
         font-size: 16px;
         font-weight: 600;
     }
 
-    &-md {
+    &.md {
         font-size: 24px;
         font-weight: 600;
     }
 
-    &-lg {
+    &.lg {
         font-size: 36px;
         font-weight: 600;
     }

@@ -2,12 +2,16 @@
 @using CVWebsite.Pages.Components;
 @using CVWebsite.Data.Models;
 
-    <h1>Hello, test</h1>
-    <h4>Hello, test</h4>
-    <h6>Hello, test</h6>
+
 <HeaderComponent Content="Hello, test" Type="HeaderComponent.HEADER_TYPES.LARGE"></HeaderComponent>
 <HeaderComponent Content="Hello, test" Type="HeaderComponent.HEADER_TYPES.MEDIUM"></HeaderComponent>
 <HeaderComponent Content="Hello, test" Type="HeaderComponent.HEADER_TYPES.SMALL"></HeaderComponent>
-<CollapsibleComponent Heading="MTA Certificaten" >
-    <BadgeComponent requestedCategory="Badge.CATEGORY.MTA"></BadgeComponent>
-</CollapsibleComponent>
+<div class="collapsible-container">
+    <CollapsibleComponent Heading="MTA Certificaten">
+        <BadgeComponent requestedCategory="Badge.CATEGORY.MTA"></BadgeComponent>
+    </CollapsibleComponent>
+    <CollapsibleComponent Heading="OFFICE Certificaten">
+        <BadgeComponent requestedCategory="Badge.CATEGORY.OFFICE"></BadgeComponent>
+    </CollapsibleComponent>
+</div>
+
