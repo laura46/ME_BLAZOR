@@ -1,0 +1,42 @@
+{
+  "1":{
+    "title": "Certified Secure Essential Security",
+    "path": "pdf/CSC-essential-security.pdf"
+  },
+  "2":{
+    "title": "Certified Secure Essential Specialities",
+    "path": "pdf/CSC-essential-specialities.pdf"
+  },
+  "3":{
+    "title": "Certified Secure Forensic Specialities",
+    "path": "pdf/CSC-forensic-specialities.pdf"
+  },
+  "4":{
+    "title": "Certified Secure Safe Internet",
+    "path": "pdf/CSC-safe-internet.pdf"
+  },
+  "5":{
+    "title": "Certified Secure Safe Internet Plus",
+    "path": "pdf/CSC-safe-internet-plus.pdf"
+  },
+  "6":{
+    "title": "Certified Secure Security Aware Administrator",
+    "path": "pdf/CSC-security-aware-administrator.pdf"
+  },
+  "7":{
+    "title": "Certified Secure Security Aware Programmer",
+    "path": "pdf/CSC-security-aware-programmer.pdf"
+  },
+  "8":{
+    "title": "Certified Secure Security Specialist",
+    "path": "pdf/CSC-security-specialist.pdf"
+  },
+  "9":{
+    "title": "Certified Secure Server Security Specialist",
+    "path": "pdf/CSC-server-security-specialist.pdf"
+  },
+  "10":{
+    "title": "Certified Secure Web Security Specialist",
+    "path": "pdf/CSC-web-security-specialist.pdf"
+  }
+}

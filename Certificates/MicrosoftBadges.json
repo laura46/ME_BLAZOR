@@ -1,38 +1,38 @@
 [
   {
     "description": "badge-mta-html5",
-    "title": "MTA: HTML5 Application Development Fundamentals - Certified 2018",
-    "html": "<img width='80' height='80' src='https://images.youracclaim.com/images/5d42d5db-3a02-4dfd-9cb0-edd0c3690c8d/MTA-HTML5-Application-Development-Fundamentals.png'>",
+    "title": "HTML5 Application Development Fundamentals <br>- 2018",
+    "src": "https://images.youracclaim.com/images/5d42d5db-3a02-4dfd-9cb0-edd0c3690c8d/MTA-HTML5-Application-Development-Fundamentals.png",
     "link": "https://www.youracclaim.com/badges/cd93bea9-7c51-45cb-8b4b-ccfb902d88de/public_url"
   },
   {
     "description": "badge-mta-dbf",
-    "title": "MTA: Database Fundamentals - Certified 2018",
-    "html": "<img width='80' height='80' src='https://images.youracclaim.com/images/b01120f3-1b27-405d-b64d-da1a2a7eca33/MTA-Database-Fundamentals-2018.png'>",
+    "title": "Database Fundamentals <br>- 2018",
+    "src": "https://images.youracclaim.com/images/b01120f3-1b27-405d-b64d-da1a2a7eca33/MTA-Database-Fundamentals-2018.png",
     "link": "https://www.youracclaim.com/badges/59702d74-af74-4f0b-9b8f-b8309ec542ba/public_url"
   },
   {
     "description": "badge-mta-sdf",
-    "title": "MTA: Software Development Fundamentals - Certified 2017",
-    "html": "<img width='80' height='80' src='https://images.youracclaim.com/images/dd81e911-710a-4657-bbf9-a4d28416257a/MTA%2BSoftware%2BDevelopment%2BFundamentals-01-2.png'>",
+    "title": "Software Development Fundamentals <br>- 2017",
+    "src": "https://images.youracclaim.com/images/dd81e911-710a-4657-bbf9-a4d28416257a/MTA%2BSoftware%2BDevelopment%2BFundamentals-01-2.png",
     "link": "https://www.youracclaim.com/badges/d247b65d-6095-413c-8358-132733b3cd0a/public_url"
   },
   {
     "description": "badge-os-pp",
-    "title": "Microsoft Office Specialist PowerPoint 2013",
-    "html": "<img width='80' height='80' src='https://images.youracclaim.com/images/b4fbd3ac-b964-4eaf-ac28-a286964ec49e/MOS_PowerPoint.png'>",
+    "title": "Microsoft Office Specialist PowerPoint <br>- 2018",
+    "src": "https://images.youracclaim.com/images/b4fbd3ac-b964-4eaf-ac28-a286964ec49e/MOS_PowerPoint.png",
     "link": "https://www.youracclaim.com/badges/693f2b01-e3bd-41a6-b898-b8487fd26a34/public_url"
   },
   {
     "description": "badge-os-ex",
-    "title": "Microsoft Office Specialist Excel 2013",
-    "html": "<img width='80' height='80' src='https://images.youracclaim.com/images/bb69f2bd-12e0-45d7-a5e7-2597dd126f4c/MOS_Excel.png'>",
+    "title": "Microsoft Office Specialist Excel <br>- 2018",
+    "src": "https://images.youracclaim.com/images/bb69f2bd-12e0-45d7-a5e7-2597dd126f4c/MOS_Excel.png",
     "link": "https://www.youracclaim.com/badges/c6180f3b-521e-4a38-a1de-6bcb62afb56b/public_url"
   },
   {
     "description": "badge-os-wo",
-    "title": "Microsoft Office Specialist Word 2013",
-    "html": "<img width='80' height='80' src='https://images.youracclaim.com/images/16bc9e00-43a7-421c-a775-a990fbc590ac/MOS_Word.png'>",
+    "title": "Microsoft Office Specialist Word <br>- 2018",
+    "src": "https://images.youracclaim.com/images/16bc9e00-43a7-421c-a775-a990fbc590ac/MOS_Word.png",
     "link": "https://www.youracclaim.com/badges/51304121-022f-461f-a0e3-b9b42d237cca/public_url"
   }
   ]

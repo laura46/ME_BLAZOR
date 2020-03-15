@@ -1,8 +1,8 @@
-﻿<div class="@Class">@Content</div>
+﻿<div class="@Class">@ChildContent</div>
 
 @code {
     [Parameter]
-    public string Content { get; set; }
+    public MarkupString ChildContent { get; set; }
     [Parameter]
     public HEADER_TYPES Type { get; set; }
 

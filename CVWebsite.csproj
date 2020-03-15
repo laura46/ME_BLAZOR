@@ -11,6 +11,16 @@
 
   <ItemGroup>
     <None Include="compilerconfig.json" />
+    <None Include="wwwroot\pdf\CSC-essential-security.pdf" />
+    <None Include="wwwroot\pdf\CSC-essential-specialities.pdf" />
+    <None Include="wwwroot\pdf\CSC-forensic-specialist.pdf" />
+    <None Include="wwwroot\pdf\CSC-safe-internet-plus.pdf" />
+    <None Include="wwwroot\pdf\CSC-safe-internet.pdf" />
+    <None Include="wwwroot\pdf\CSC-security-aware-administrator.pdf" />
+    <None Include="wwwroot\pdf\CSC-security-aware-programmer.pdf" />
+    <None Include="wwwroot\pdf\CSC-security-specialist.pdf" />
+    <None Include="wwwroot\pdf\CSC-server-security-specialist.pdf" />
+    <None Include="wwwroot\pdf\CSC-web-security-specialist.pdf" />
   </ItemGroup>
 
   <ItemGroup>

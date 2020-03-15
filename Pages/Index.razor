@@ -3,15 +3,17 @@
 @using CVWebsite.Data.Models;
 
 
-<HeaderComponent Content="Hello, test" Type="HeaderComponent.HEADER_TYPES.LARGE"></HeaderComponent>
-<HeaderComponent Content="Hello, test" Type="HeaderComponent.HEADER_TYPES.MEDIUM"></HeaderComponent>
-<HeaderComponent Content="Hello, test" Type="HeaderComponent.HEADER_TYPES.SMALL"></HeaderComponent>
+
 <div class="collapsible-container">
-    <CollapsibleComponent Heading="MTA Certificaten">
+    <CollapsibleComponent Heading='new MarkupString("MTA <br> Certificaten")'>
         <BadgeComponent requestedCategory="Badge.CATEGORY.MTA"></BadgeComponent>
     </CollapsibleComponent>
-    <CollapsibleComponent Heading="OFFICE Certificaten">
+    <CollapsibleComponent Heading='new MarkupString("OFFICE <br> Certificaten")'>
         <BadgeComponent requestedCategory="Badge.CATEGORY.OFFICE"></BadgeComponent>
+    </CollapsibleComponent>
+    <CollapsibleComponent Heading='new MarkupString("Security <br> Certificaten")'>
+        <a href="pdf/CSC-essential-security.pdf" target="_blank">test</a>
+        
     </CollapsibleComponent>
 </div>
 

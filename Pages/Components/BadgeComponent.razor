@@ -1,12 +1,12 @@
 ﻿@using CVWebsite.Data.Models;
-@inject IJSRuntime JSRuntime;
-
 
 @foreach (Badge badge in badges)
 {
-    <div class="badge-container" @onclick="OpenBadgeLink(badge.Link)">
-        <HeaderComponent Content="@badge.Title" Type="HeaderComponent.HEADER_TYPES.SMALL"></HeaderComponent>
-        @((MarkupString)badge.Html)
+    <div class="badge-container">
+        <a href="@badge.Link" target="_blank">
+            <HeaderComponent ChildContent="new MarkupString(badge.Title)" Type="HeaderComponent.HEADER_TYPES.SMALL"></HeaderComponent>
+            <img src="@badge.Src" />
+        </a>
     </div>
 }
 
@@ -19,9 +19,5 @@
     {
         Badge getBadges = new Badge();
         badges = getBadges.GetBadges(requestedCategory);
-    }
-    public EventCallback OpenBadgeLink(string link) {
-        JSRuntime.InvokeAsync<object>("open", link, "_blank");
-        return new EventCallback();
     }
 }

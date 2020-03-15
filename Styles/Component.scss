@@ -1,12 +1,19 @@
 ﻿@import 'Helper.scss';
+@import 'Theme.scss';
 
 .badge {
     &-container {
-        @include flex-row;
-        margin: 12px 0;
-        cursor: pointer;
+        margin-bottom: 12px;
         & img {
-            display: flex;
+            min-width:80px;
+            min-height:80px;
+            width: 80px;
+            height: 80px;
+        }
+        & a {
+            @include flex-row;
+            text-decoration: none;
+            color: black !important;
         }
     }
 }
@@ -25,18 +32,29 @@
             margin: 6px 0;
         }
     }
-    &-header {
-        &.in {
-            @include border;
-        }
 
+    &-header {
+        @include flex-row;
+        justify-content: space-around;
         cursor: pointer;
         padding: 6px 12px;
 
-        & > * {
-            padding-left: 12px;
+        &.out {
+            justify-content: space-between;
+        }
+        & .header {
+            margin: 4px 20px 4px 4px;
+        }
+        & .oi {
+            padding: 4px;
+        }
+        &:hover {
+            & > * {
+                color: $main-color;
+            }
         }
     }
+
     &-body {
         padding: 6px 20px;
     }

@@ -1,16 +1,16 @@
 ﻿<div class="collapsible">
     @if (Collapsed)
     {
-        <div class="row-end collapsible-header out" @onclick="Toggle">
-            <HeaderComponent Content="@Heading" Type="HeaderComponent.HEADER_TYPES.MEDIUM"></HeaderComponent>
+        <div class="collapsible-header out" @onclick="Toggle">
+            <HeaderComponent ChildContent="@Heading" Type="HeaderComponent.HEADER_TYPES.MEDIUM"></HeaderComponent>
             <span class="oi button oi-chevron-top" title="toggle down" aria-hidden="true"></span>
         </div>
         <div class="collapsible-body">@ChildContent</div>
     }
     else
     {
-        <div class="row-end collapsible-header" @onclick="Toggle" >
-            <HeaderComponent Content="@Heading" Type="HeaderComponent.HEADER_TYPES.MEDIUM"></HeaderComponent>
+        <div class="collapsible-header" @onclick="Toggle" >
+            <HeaderComponent ChildContent="@Heading" Type="HeaderComponent.HEADER_TYPES.MEDIUM"></HeaderComponent>
             <span class="oi button oi-chevron-bottom" title="toggle down" aria-hidden="true"></span>
         </div>
     }
@@ -21,7 +21,7 @@
 
 @code {
     [Parameter]
-    public string Heading { get; set; }
+    public MarkupString Heading { get; set; }
     [Parameter]
     public RenderFragment ChildContent { get; set; }
 
