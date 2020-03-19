@@ -1,34 +1,25 @@
 ﻿$main-color: pink;
 $accent-color: indigo;
-$bar-color: #f7f7f7;
-$right-bar-space: 240px;
-$badge-size: 80px;
+$bar-color: #ffffff;
+$navbar-shadow: #d3d3d394; 
 $button-shadow: 2px 2px 4px lightgrey;
 
 button {
-    background-color: $accent-color !important;
     color: white;
     border-radius: 4px;
     border: $accent-color;
     padding: 4px 8px;
     box-shadow: $button-shadow;
-}
 
-a, .navbar-brand {
-    color:$accent-color !important;
+    &.main {
+        background-color: $main-color;
+    }
 
-}
-a:hover {
-    color: $main-color !important;
-}
-.navbar-brand:hover {
-    color: $main-color !important;
-}
-
-.oi.button {
-    cursor: pointer;
-    &:hover, :focus, :active {
-        color: $main-color;
+    &.accent {
+        background-color: $accent-color;
     }
 }
+
+
+
 

@@ -1,4 +1,6 @@
 @inject NavigationManager NavigationManager
+@using CVWebsite.Pages.Login
+@using CVWebsite.Pages.Shared
 
 <CascadingAuthenticationState>
     <Router AppAssembly="@typeof(Program).Assembly">
@@ -6,7 +8,7 @@
             <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
                 <NotAuthorized>
                     @{
-                        <CVWebsite.Pages.RedirectToLogin />
+                        <RedirectToLogin />
                     }
                 </NotAuthorized>
                 <Authorizing>

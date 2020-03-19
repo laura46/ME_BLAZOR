@@ -1,44 +1,44 @@
 ﻿@import 'Helper.scss';
 @import 'Theme.scss';
-@import 'Component.scss';
+@import 'Component/Component.scss';
 @import url('../css/open-iconic/font/css/open-iconic-bootstrap.min.css');
 
-.top-nav {
+.navbar {
     @include flex-row-end;
     position: sticky;
     top: 0;
     height: 6vh;
     background-color: $bar-color;
-    border-bottom: 1px solid #d6d5d5;
-    & > a, form {
-        margin-left: 12px;
+    box-shadow: 0px 2px 4px $navbar-shadow;
+    & button {
+        margin-right: 6px;
     }
 }
 
 body {
-    height: 100%;
-    min-height: 100vh;
+    /*height: 100%;*/
+    /*min-height: 100vh;*/
+    margin: 0;
 
-    & > app {
+    /*& > app {
         min-height: inherit;
-    }
+    }*/
 
     & * {
         @include font-roboto;
     }
 }
-
-.footer {
-    overflow: hidden;
+.content {
+    width: 100%;
+    height: calc(100vh - 12vh);
+}
+footer {
+    @include flex-row-center;
     height: 6vh;
-    position: sticky;
+    position: fixed;
     bottom: 0px;
-    background-color: #ffffff;
-
-    & > div.container {
-        height: inherit;
-        @include flex-row-center;
-    }
+    width: 100%;
+    background-color: $bar-color;
 }
 
 

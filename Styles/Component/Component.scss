@@ -1,5 +1,8 @@
-﻿@import 'Helper.scss';
-@import 'Theme.scss';
+﻿@import '../Helper.scss';
+@import '../Theme.scss';
+
+$right-bar-space: 240px;
+$badge-size: 80px;
 
 .github {
     &-button {
@@ -12,16 +15,24 @@
         border: 1px solid black;
         cursor: pointer;
         color: white;
+        & span {
+            padding: 8px;
+            font-family: "Questrial", sans-serif;
+        }
         & i {
             color: white;
             padding: 0 6px;
             &:before {
                 font-size: 54px;
             }
+            &:last-child {
+                padding-left: 12px;
+            }
         }
 
         &:hover {
             & > i.fa-angle-right {
+                padding-left: 8px;  
                 &:before {
                     content: "\f101";
                 }
@@ -76,8 +87,8 @@
         & .header {
             margin: 4px 20px 4px 4px;
         }
-        & .oi {
-            padding: 4px;
+        & i {
+            font-size: 36px;
         }
         &:hover {
             & > * {

@@ -2,18 +2,31 @@
 @using CVWebsite.Pages.Components;
 @using CVWebsite.Data.Models;
 
+    <div class="column">
+        <div class="collapsible-container">
+            <CollapsibleComponent Heading='new MarkupString("MTA <br> Certificaten")'>
+                <BadgeComponent requestedCategory="Badge.CATEGORY.MTA"></BadgeComponent>
+            </CollapsibleComponent>
+            <CollapsibleComponent Heading='new MarkupString("OFFICE <br> Certificaten")'>
+                <BadgeComponent requestedCategory="Badge.CATEGORY.OFFICE"></BadgeComponent>
+            </CollapsibleComponent>
+            <CollapsibleComponent Heading='new MarkupString("Security <br> Certificaten")'>
+                <PdfLinkComponent></PdfLinkComponent>
+            </CollapsibleComponent>
+            <GithubComponent></GithubComponent>
+        </div>
+        <div class="collapsible-container">
+            <CollapsibleComponent Heading='new MarkupString("MTA <br> Certificaten")'>
+                <BadgeComponent requestedCategory="Badge.CATEGORY.MTA"></BadgeComponent>
+            </CollapsibleComponent>
+            <CollapsibleComponent Heading='new MarkupString("OFFICE <br> Certificaten")'>
+                <BadgeComponent requestedCategory="Badge.CATEGORY.OFFICE"></BadgeComponent>
+            </CollapsibleComponent>
+            <CollapsibleComponent Heading='new MarkupString("Security <br> Certificaten")'>
+                <PdfLinkComponent></PdfLinkComponent>
+            </CollapsibleComponent>
+            <GithubComponent></GithubComponent>
+        </div>
+    </div>
 
-
-<div class="collapsible-container">
-    <CollapsibleComponent Heading='new MarkupString("MTA <br> Certificaten")'>
-        <BadgeComponent requestedCategory="Badge.CATEGORY.MTA"></BadgeComponent>
-    </CollapsibleComponent>
-    <CollapsibleComponent Heading='new MarkupString("OFFICE <br> Certificaten")'>
-        <BadgeComponent requestedCategory="Badge.CATEGORY.OFFICE"></BadgeComponent>
-    </CollapsibleComponent>
-    <CollapsibleComponent Heading='new MarkupString("Security <br> Certificaten")'>
-        <PdfLinkComponent></PdfLinkComponent>
-    </CollapsibleComponent>
-    <GithubComponent></GithubComponent>
-</div>
 
